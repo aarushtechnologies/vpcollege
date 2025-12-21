@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-indigo-700 text-white py-6">
+    <div class="max-w-6xl mx-auto px-6">
+      <h1 class="text-3xl font-bold">Online Admission Form</h1>
+      <p class="text-lg mt-1">
+        Vinayakrao Patil College, Vaijapur
+      </p>
+    </div>
+  </header>
+
+  <!-- FORM -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-6 bg-white p-8 rounded-xl shadow">
+
+      <h2 class="text-2xl font-bold mb-6 text-center">
+        Student Admission Details
+      </h2>
+
+      <form class="space-y-6">
+
+        <!-- PERSONAL DETAILS -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-indigo-700">
+            Personal Information
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="Full Name"
+                   class="border p-3 rounded-lg w-full" required>
+
+            <input type="date"
+                   class="border p-3 rounded-lg w-full" required>
+
+            <input type="email" placeholder="Email Address"
+                   class="border p-3 rounded-lg w-full" required>
+
+            <input type="tel" placeholder="Mobile Number"
+                   class="border p-3 rounded-lg w-full" required>
+          </div>
+        </div>
+
+        <!-- GENDER -->
+        <div>
+          <label class="block font-semibold mb-2">Gender</label>
+          <div class="flex gap-6">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+          </div>
+        </div>
+
+        <!-- COURSE SELECTION -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-indigo-700">
+            Course Selection
+          </h3>
+
+          <select class="border p-3 rounded-lg w-full" required>
+            <option value="">Select Course</option>
+            <option>B.A. (History, Political Science, Economics)</option>
+            <option>B.Sc. (Physics, Chemistry, Mathematics)</option>
+            <option>B.Com (Accounting, Management)</option>
+          </select>
+        </div>
+
+        <!-- EDUCATIONAL DETAILS -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-indigo-700">
+            Educational Details
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="12th Board / University"
+                   class="border p-3 rounded-lg w-full">
+
+            <input type="number" placeholder="12th Percentage"
+                   class="border p-3 rounded-lg w-full">
+          </div>
+        </div>
+
+        <!-- ADDRESS -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-indigo-700">
+            Address
+          </h3>
+
+          <textarea rows="3" placeholder="Full Address"
+                    class="border p-3 rounded-lg w-full"></textarea>
+        </div>
+
+        <!-- DOCUMENT UPLOAD -->
+        <div>
+          <label class="block font-semibold mb-2">
+            Upload Documents (PDF/JPG)
+          </label>
+          <input type="file" class="border p-3 rounded-lg w-full">
+        </div>
+
+        <!-- DECLARATION -->
+        <div class="flex items-start gap-2">
+          <input type="checkbox" required>
+          <p class="text-sm">
+            I declare that the information provided above is true
+            to the best of my knowledge.
+          </p>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="text-center">
+          <button type="submit"
+                  class="bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-800 transition">
+            Submit Application
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-indigo-700 text-white text-center py-5">
+    © 2025 Vinayakrao Patil College, Vaijapur
+  </footer>
+
+</body>
+</html>
